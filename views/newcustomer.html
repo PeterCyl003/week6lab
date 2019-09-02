@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1>
+
+        <a href="/">Home</a>
+        <a href="/getAllTasks">List All Tasks</a>
+        <form action="/newTask" method="POST">
+            Task Name: <input type="text" name="taskName" /><br />
+            Assign to: <input type="text" name="assignTo" /><br />
+            Due Date: <input type="text" name="taskDue" /><br />
+            Task status: Complete <input type="radio" name="taskStatus" value="Complete" />
+            InProgress <input type="radio" name="taskStatus" value="InProgress" checked/><br />
+            Task Desc: <input type="text" name="taskDesc" /><br />
+
+            <button>submit</button><br />
+        </form>
+    </h1>
+</body>
+
+</html>

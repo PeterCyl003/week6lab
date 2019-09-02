@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        <a href="/">Home</a>
+        <a href="/newTask">Add new Task</a>
+        <table>
+            <tr>
+                <th>
+                    taskID
+                </th>
+                <th>
+                    Task name
+                </th>
+                <th>
+                    Assign to
+                </th>
+                <th>
+                    Due Date
+                </th>
+                <th>
+                    Task status
+                </th>
+                <th>
+                    Task Description
+                </th>
+            </tr>
+            <% for(let i=0; i<customer.length;i++){ %>
+            <tr>
+                <td>
+                    <%= customer[i]._id %>
+                </td>
+                <td>
+                    <%= customer[i].taskName %>
+                </td>
+                <td>
+                    <%= customer[i].assignTo %>
+                </td>
+                <td>
+                    <%= customer[i].dueDate %>
+                </td>
+                <td>
+                    <%= customer[i].taskStatus %>
+                </td>
+                <td>
+                    <%= customer[i].taskDesc %>
+                </td>
+            </tr>
+            <%} %>
+        </table>
+
+    </h1>
+
+</body>
