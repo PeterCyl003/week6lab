@@ -9,7 +9,7 @@ app.use(express.static("css"));
 
 let mongdb=require("mongodb")
 const MongoClient=mongdb.MongoClient;
-const url="mongodb://192.168.0.78:27017";
+const url="mongodb://35.201.11.233/:27017";
 let db=null;
 let col=null;
 
