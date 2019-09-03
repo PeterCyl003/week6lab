@@ -7,12 +7,12 @@ app.set("view engine", "html")
 app.use(express.static("images"));
 app.use(express.static("css"));
 
+
 let mongdb = require("mongodb")
 const MongoClient = mongdb.MongoClient;
 const url = "mongodb://localhost:27017";
 let db = null;
 let col = null;
-
 
 
 app.use(bodyParser.urlencoded({ extended: false }));
