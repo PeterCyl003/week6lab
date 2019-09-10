@@ -87,7 +87,7 @@ app.post("/newDeveloper", function (req, res) {
     // }
     // db.push(req.body);
     // col.insertOne(obj);
-    req.body.firstName=undefined
+    // req.body.firstName=undefined
     console.log(req.body);
     console.log("firstName:",req.body.firstName)
     Developer.create({
