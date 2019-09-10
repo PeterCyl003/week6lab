@@ -167,7 +167,7 @@ app.get("/:oldfirstname/:newfirstname",function(req,res){
     Developer.updateMany({"name.firstName":req.params.oldfirstname},{$set:{"name.firstName":req.params.newfirstname}}, function (err, obj) {
         console.log(obj);
     })
-    res.redirect("/")
+    res.redirect("/getAllDevelopers")
 })
 
 app.get("/findNotTomorrow", function (req, res) {
